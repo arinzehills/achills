@@ -1,0 +1,92 @@
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    align-items: center;
+    transition:0.6s;
+    z-index:100000; 
+    justify-content: space-between;
+}
+.logo img{
+    height:100px;
+    width: 100px;
+    border-radius: 70%;
+    background: transparent;
+}
+header .logo{
+    position:relative;
+    font-weight:700;
+    color:white;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    transition:0.6s;
+    left:60px;
+    font-size: 2em;
+    top:0px;
+  }
+  header ul{
+    position:absolute;
+    display:flex;
+   left:40%;
+    top:45px
+  }
+  header div h1{
+      color: white;
+      top: -20px;
+  }
+  header ul li{
+    position:relative;
+    list-style:none;
+    
+  }
+  header ul li a{
+    position:relative;
+   margin:10px 15px;
+   color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.5s;
+  }
+header.sticky{
+padding:1px 2px;
+background:  rgb(255, 255, 255);
+ position:fixed;
+ height: 90px;
+
+}
+header.sticky ul li a{
+  color:  rgba(96, 250, 104, 0.76);
+}
+header.sticky ul li .dropbtn{
+  color: white;
+}
+header.sticky div h1{
+    color: black;
+  }
+ 
+header.sticky  .logo{
+    color: rgba(96, 250, 104, 0.76);;
+}
+@media only screen and (max-width: 793px)
+  {
+      
+    header.sticky ul li a{
+      color: white
+    }
+    header.sticky{
+      height: 38px;
+    }
+    header .logo{
+      top: 25px;
+      font-size: 1em;
+      
+    }
+    header.sticky  .logo{
+          top:10px;
+    }
+
+  }

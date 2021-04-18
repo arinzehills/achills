@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/* for harmburger menu*/
+
+@media only screen and (min-width: 793px){
+        #menu{
+            opacity: 0;
+            display: none;
+        }
+        #burger{
+            opacity: 0;
+            display: none;
+        }
+        #menu,#menu-toggle{
+            opacity: 0;
+            display: none;
+          }
+    }
+
+    @media only screen and (max-width: 792px){
+        
+        
+            #menu-toggle{
+                display: none;
+            }
+        }
+    
+@media only screen and (max-width: 792px)
+    {
+                 
+                            #trigger, #burger, #burger:before, #burger:after {
+                                position: absolute;
+                                top: 25px;
+                                left: 25px;
+                                background:linear-gradient(to top, rgb(93, 247, 119), greenyellow);
+                                width: 30px;
+                                height: 5px;
+                                transition: .2s ease;
+                                cursor: pointer;
+                                z-index: 1;
+                            }
+
+                            #trigger {
+                                height: 25px;
+                                background: none;
+                            }
+                            /* for the three lines*/
+                            #burger:before {
+                                content: " ";
+                                top: 10px;
+                                left: 0;
+                            }
+                            #burger:after {
+                                content: " ";
+                                top: 20px;
+                                left: 0;
+                            }
+                            #menu-toggle:checked + #trigger + #burger {
+                                top: 35px;
+                                transform: rotate(180deg);
+                                transition: transform .2s ease;bottom: 0;
+                            }
+                            #menu-toggle:checked + #trigger + #burger:before {
+                                width: 20px;
+                                top: -2px;
+                                left: 18px;
+                                transform: rotate(45deg) translateX(-5px);
+                                transition: transform .2s ease;bottom: 0;
+                            }
+
+                            #menu-toggle:checked + #trigger + #burger:after {
+                                width: 20px;
+                                top: 2px;
+                                left: 18px;
+                                transform: rotate(-45deg) translateX(-5px);
+                                transition: transform .2s ease;
+                                bottom: 0;
+                            }
+                            
+                            #menu-toggle:checked + #trigger + #burger + #menu {
+                                bottom: 0;
+                                animation: checked-anim 1s ease both;
+                            }
+                            #menu-toggle:checked + #trigger ~  header li, a {
+                                               bottom: 0;
+                            }
+                            [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+                                display: none;
+                                }
+
+                /*for the hamburger list*/
+                    header ul  {
+                                float: none;
+                                position: fixed;
+                                z-index: 9;
+                                left: 0;
+                                right: 0;
+                                top: 51px;
+                                bottom: 100%;
+                                background: rgba(152, 253, 1, 0.827);
+                                flex-direction: column;
+                                width: auto;
+                                height: auto;
+                                overflow: hidden;
+                                transition: all .5s ease-in-out;
+                                color: blueviolet;
+                                }
+                                /*when hamburger is checked*/
+                                #menu-toggle:checked + #trigger + #burger ~ .links {
+                                bottom: 0;    
+                                }
+                                header ul li a{
+                                width: auto;
+                                height: auto;
+                                margin-left: 10em;
+                                justify-content: center;
+                                line-height: 3em;
+                                }
+}
+

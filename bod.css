@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+}
+.button-soon{
+    background-image: linear-gradient(to top, rgb(247, 111, 93), rgba(255, 145, 0, 0.827));
+    border-radius: 30px;
+    height: 50px;
+    width: 230px;
+    margin-left: 1%;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 100;
+    color:white;
+    font-size: 20px;
+          }
+section{
+    position: relative;
+    width: 100%; 
+    height: 50rem;
+    background: linear-gradient(to top, rgb(14, 6, 54),#570975);
+    justify-content: center;
+    align-items: center;
+}
+section h2{
+  
+    margin-left: 40%;
+    color: #fff;
+    margin-bottom: 1em;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: white;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    background: #fff;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    clip-path: polygon(100% 0, 0 0%, 100% 100%);
+}
+.services{
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+.services .div-glass{
+    display: block;
+    width: 15rem;
+    height: 18.8rem;
+    background-color: white;
+    background: linear-gradient(
+                    to right bottom,
+                rgba(255,255,255,0.4),
+                rgba(255,255,255, 0.1));
+                border-radius: 10px;
+                padding: 1em;
+                margin: 10px;
+                margin-left: 6em;
+                border-top: 1px solid rgba(255,255,255,0.5);
+                border-left: 1px solid rgba(255,255,255,0.5);
+                backdrop-filter: blur(5px);
+                z-index: 1;
+             align-content: center;
+
+}
+.div-glass h3{
+    padding-top: 5px;
+    margin-left: 30px;
+    color:  rgb(255, 144, 129);
+}
+.div-glass p{
+    padding-top: 10px;
+    color: white;
+ }
+ .div-techglass{
+   margin-top: 50px;
+   margin: 10px;
+    display: flex;
+ }
+ .div-techglass2{
+    margin-top: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .tech-glass{
+    width: 15rem;
+    background-color: white;
+    background: linear-gradient(
+                    to right bottom,
+                rgba(255,255,255,0.4),
+                rgba(255,255,255, 0.1));
+                border-radius: 10px;
+                padding: 1em;
+                margin: 10px;
+                margin-left: 1em;
+                border-top: 1px solid rgba(255,255,255,0.5);
+                border-left: 1px solid rgba(255,255,255,0.5);
+                backdrop-filter: blur(5px);
+                
+                
+             align-content: center;
+ }
+
+ .technology h2{
+    padding-top: 1em;
+    margin-left: 25rem;
+ }
+.circle, .circle1, .circle2{
+    background: white;
+    background: linear-gradient();
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+            }
+            .circle{
+                background-image: linear-gradient(to top, rgb(7, 176, 255), rgba(0, 60, 255, 0.827));
+                left: -3em;
+            }
+            .circle1{
+               background-image: linear-gradient(to top, rgb(247, 111, 93), rgba(255, 145, 0, 0.827));
+                }
+            .circle2{
+                background-image: linear-gradient(to top, rgb(247, 111, 93), rgba(255, 145, 0, 0.827));
+                right: 2%;
+                z-index: 0;
+                top: 10px;
+            }
+            .tech-glass h3{
+                color:#fff;
+            }
+            
+#pabout{
+    margin-left: 5%; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 3em;
+    word-spacing: 10px;
+    font-size: 20px;
+ }
+ .about-div{
+     display: flex;
+
+ }
+.about-img img{
+    width: 70vh;
+     height: 60vh;
+}
+.about-img svg{
+    width: 70vh;
+     height: 60vh;
+}
+
+.about-me{
+    width: 60%;
+    display: block;
+}
+.Special {
+    margin-left: 35%;
+    color: rgb(7, 176, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10em;
+    z-index: 1;
+}
+            @media only screen and (max-width: 792px)
+    {
+                section{
+                    position: relative;
+                    width: 100%; 
+                    height: 95rem;
+                    background: linear-gradient(to top, rgb(14, 6, 54),#570975);
+                    justify-content: center;
+                    align-items: center;
+                }
+                section h2{
+                
+                    margin-left: 10%;
+                    color: #fff;
+                    margin-bottom: 1em;
+                }
+                .services{
+                    display:block;
+                
+                }
+                .services-body h2{
+                    margin-left: 9rem;
+                }
+                .services .div-glass{
+                    width: 15rem;
+                    height: 22.5rem;
+                    margin-left: 40px;
+                }
+                .div-techglass{
+                    justify-content: center;
+                    align-items: center;
+                }
+                .technology{
+                    display: block;
+                    position: relative;
+                }
+                .tech-glass{
+                    width: 6.5rem;
+                
+                }
+                .technology h2{
+                    padding-top: 1em;
+                    margin-left: 2rem;
+                    font-size: 20px;
+                 }
+                 .tech-glass h3{
+                     color:black;
+                 }
+                 #pabout{
+                    margin-left:0; 
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                   line-height: 1em;
+                   padding: 10px;
+                   padding-top: 1em;
+                  }
+                  .about-div{
+                    display: inline;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .about-me{
+                    width: 100%;
+                    display: block;
+                }
+                  .about-img{
+                    display: inline;
+                    margin-left: 10px;
+                }
+                .about-img img{
+                    height: 18rem;
+                    width: 90%;
+                }
+                .about-img svg{
+                    height: 18rem;
+                    width: 90%;
+                }
+        
+        }

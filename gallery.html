@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Ac Hills Tech| Home </title>
+
+        <link href="aos.css" rel="stylesheet">
+        
+        <!--for general menn-->
+        <link href="navigation.css" rel="stylesheet" >
+        <!-- for hamburger menu-->
+        <link rel="stylesheet" type="text/css"   href="smallNavigation.css"  />
+        <link href="wave.css" type="text/css" rel="stylesheet">
+        <link href="loader.css" type="text/css" rel="stylesheet">
+        <link href="footer.css" type="text/css" rel="stylesheet">
+        <link href="body.css" type="text/css" rel="stylesheet">
+
+<!-- online css-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
+        <link href="css/ swiper-bundle.min.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!--online js-->
+        <script src="js/swiper-bundle.min.js"></script>
+      
+    </head>
+    <body>
+        <!--
+        <div class="loader_bg">
+            <div class="loader-div"></div>
+            
+            <img src="img/loaderimg.png">
+            <div class="loading-spinner">
+                <img style="border-radius: 50%; height: 13rem; width: 13rem; left: 1em; z-index: 1;" src="img/mylogo.png">
+            </div>
+
+            <div class="loading-dots">
+                <div class="bounce"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="loading-name" style="display: inline-flex;">
+                    <div class="name">Ac Hills</div>
+                    <div class="name1" style="margin-left: 6px;">Techno</div>
+                    <div class="name2" style="margin-left: -19px;">logies</div>
+                        <h3 style="color: #ff5733;
+                        position: absolute;top:50%;align-items: center;">Drivers of Ideas and Creativity...</h3>
+                        
+            </div>
+            
+        </div>
+    -->
+
+        <!--wavy background-->
+
+        <div style="position: relative;
+        background-image: linear-gradient(to top,#b700ff, rgb(7, 176, 255));
+        min-height: 99vh;">
+
+                <header>
+                    <div style="display: flex;">
+
+                        <a class="logo" href="#"><img style=""
+                            src="img/mylogo2.png"></a>
+                         <h1 style="padding: 1em; margin-left: 1em;">Achills Technologies</h1>
+                    </div>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label id="trigger" for="menu-toggle"></label>
+                    <label id="burger" for="menu-toggle"></label>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#latest">Jobs Done</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#index.htmlcontact">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </header>
+
+                <div>
+                    <div class="custom-shape-divider-bottom-1612500890">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                             class="shape-fill"></path>
+                        </svg>
+                    </div>
+                     <div class="slideshow-div ">
+                    <img src="img/Arinze1.png" id="myimage" >
+                        <div class="slideshow-name">
+                            <h1 style=""> Gallery</h1>
+                           
+                        </div>
+                        
+                    </div>
+              </div>
+        </div>
+    </body>
+    <script src="js/jquery-1.12.4.min.js"></script> 
+        
+    <script src="aos.js"></script> 
+          <script>
+                  window.addEventListener("scroll", function(){
+                      var header=document.querySelector("header");
+                      header.classList.toggle("sticky", window.scrollY > 0);
+                  })
+                  AOS.init();
+                  </script>
+              <script>
+                  setTimeout(function(){
+                      $('.loader_bg').fadeToggle();
+                  }, 1500);
+          </script>
+    </html>
