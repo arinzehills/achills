@@ -167,11 +167,14 @@ section::after{
     width: 60%;
     display: block;
 }
+.about-me h1{
+    margin-top: 6em;
+}
 .Special {
     margin-left: 35%;
     color: rgb(7, 176, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 10em;
+    margin-top: 6em;
     z-index: 1;
 }
             @media only screen and (max-width: 792px)
@@ -249,6 +252,10 @@ section::after{
                 .about-img svg{
                     height: 18rem;
                     width: 90%;
+                }
+                .Special{
+                    margin-top: 2em;
+                    font-size: 20px;
                 }
         
         }
