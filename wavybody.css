@@ -58,7 +58,10 @@
         
     }
     .rotating{
-        right: 50%;
-        top: 43%;
+        right: 40%;
+        top: 21%;
+    }
+    .slideshow-name h1{
+        font-size: 35px;
     }
 }

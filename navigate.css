@@ -73,16 +73,24 @@ header.sticky  .logo{
 }
 @media only screen and (max-width: 793px)
   {
-      
+    .logo img{
+      height:90px;
+      width: 90px;
+  }
+  header div h1{
+    color: white;
+    top: -40px;
+    font-size: 25px;
+}
     header.sticky ul li a{
       color: white
     }
     header.sticky{
-      height: 38px;
+      height: 78px;
     }
     header .logo{
-      top: 25px;
-      font-size: 1em;
+      top: 1px;
+      font-size: 10px;
       
     }
     header.sticky  .logo{
