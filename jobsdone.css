@@ -105,36 +105,36 @@
     }
     .jobs-circle1{
         left: 1rem;
-        top: 180rem;
+        top: 195rem;
 
      }
      .jobs-circle3{
         left: 1rem;
-        top: 194rem;
+        top: 212rem;
      }
      .jobs-circle5{
         left: 1rem;
-        top: 213rem;
+        top: 230rem;
     }
     .jobs-circle2{
         position: absolute;
         left: 14rem;
-        top: 188rem;
+        top: 199rem;
     }.jobs-circle4{
         position: absolute;
         left: 13rem;
-        top: 208em;
+        top: 219em;
     }
      .jobs-circle6{
          position: absolute;
          left: 12rem;
-        top: 226em;
+        top: 239em;
      }
      .jobs-circle2,.jobs-circle4, .jobs-circle6
  {
  
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 9rem;
     
     
  }
