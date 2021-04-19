@@ -60,6 +60,7 @@
     .rotating{
         display: flex;
         justify-content: center;
+        align-items: center;
         top: 21%;
     }
     .slideshow-name h1{
