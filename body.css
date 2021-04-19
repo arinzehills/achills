@@ -175,7 +175,29 @@ section::after{
     margin-top: 6em;
     z-index: 1;
 }
-            @media only screen and (max-width: 792px)
+      
+/*for bigger screens only*/
+@media only screen and (min-width: 793px)
+    {
+        #graphics-about{
+            right: 0;
+            position: absolute;
+            margin-left: 10px;
+        }
+        #graphics-img{
+            left: 10px;
+            margin-left: 3em;
+        }
+        #mob-about{
+            right: 20px;
+            position: absolute;
+        }
+        #mob-img{
+            right: 0;
+            margin-left: 3em;
+        }
+    }      
+@media only screen and (max-width: 792px)
     {
                 section{
                     position: relative;

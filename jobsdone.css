@@ -85,6 +85,12 @@
      width:10rem;
      height: 10rem;
  }
+ .jobs-name{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+ }
 @media only screen and (max-width: 792px)
 {
     .jobsdone-div{
@@ -105,30 +111,30 @@
     }
     .jobs-circle1{
         left: 1rem;
-        top: 195rem;
+        top: 205rem;
 
      }
      .jobs-circle3{
         left: 1rem;
-        top: 212rem;
+        top: 220rem;
      }
      .jobs-circle5{
         left: 1rem;
-        top: 230rem;
+        top: 240rem;
     }
     .jobs-circle2{
         position: absolute;
         left: 14rem;
-        top: 199rem;
+        top: 209rem;
     }.jobs-circle4{
         position: absolute;
         left: 13rem;
-        top: 219em;
+        top: 229em;
     }
      .jobs-circle6{
          position: absolute;
          left: 12rem;
-        top: 239em;
+        top: 249em;
      }
      .jobs-circle2,.jobs-circle4, .jobs-circle6
  {
