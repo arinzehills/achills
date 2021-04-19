@@ -80,7 +80,7 @@ header.sticky  .logo{
   header div h1{
     color: white;
     top: -40px;
-    left: 50px;
+    left: 30px;
     font-size: 20px;
 }
     header.sticky ul li a{
@@ -92,7 +92,7 @@ header.sticky  .logo{
     header .logo{
       top: 1px;
       font-size: 30px;
-      left: 5px;
+      left: 40px;
       
     }
     header.sticky  .logo{
