@@ -20,7 +20,9 @@
         <link href="body.css" type="text/css" rel="stylesheet">
         <link href="wavebody.css" type="text/css" rel="stylesheet">
         <link href="jobsdone.css" type="text/css" rel="stylesheet">
+        <link href="swiper.css" type="text/css" rel="stylesheet">
         
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <!-- online css-->
         <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
         <link href="css/ swiper-bundle.min.css" rel="stylesheet" type="text/css">
@@ -287,6 +289,61 @@
                     <img src="img/graph.jpg" >
                 </div>
             </div>
+<!--testimonial-->
+            <section id="section1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" style="display:flex">
+                        <div class="swiper-slide">
+                                <div class="testimonialBox">
+                                    <div class="testi-img">
+                                        <img src="img/CEO.png" alt="" class="quote">
+                                    </div>
+                                    <div class="swiper-name">
+                                        <h1>Arinze Chris Hills</h1>
+                                        
+                                    </div>
+                                    <div class="swiper-name">
+                                        <p>CEO/Founder</p>
+                                        
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonialBox">
+                                <div class="testi-img">
+                                    <img src="img/CEO.png" alt="" class="quote">
+                                </div>
+                                <div class="swiper-name">
+                                    <h1>Arinze Chris Hills</h1>
+                                    
+                                </div>
+                                <div class="swiper-name">
+                                    <p>CEO/Founder</p>
+                                    
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="testi-img">
+                                <img src="img/CEO.png" alt="" class="quote">
+                            </div>
+                            <div class="swiper-name">
+                                <h1>Arinze Chris Hills</h1>
+                                
+                            </div>
+                            <div class="swiper-name">
+                                <p>CEO/Founder</p>
+                                
+                            </div>
+
+                        </div>
+                </div>
+                    </div>
+                </div>
+            </section>
             <!-- this is where the footer starts-->
             <div style="position: relative;
             background-image: linear-gradient(
@@ -336,9 +393,30 @@
              <a href="#"><button class="footer-button" style="color: white;">Back to top!</button>
          </div>
      </div>
+     <script src="js/swiper-bundle.min.js"></script>
+     
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/gsap.min.js"></script>
         <script src="js/all.js"></script>
         <script src="js/TextPlugin.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+          </script>
     </body>
     <script src="js/jquery-1.12.4.min.js"></script> 
     <script src="aos.js"></script> 

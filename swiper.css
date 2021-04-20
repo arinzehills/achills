@@ -1,0 +1,71 @@
+#section1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: cornflowerblue;
+}
+.swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    
+}
+.testimonialBox{
+    width: 15rem;
+    background-color: white;
+    background: linear-gradient(
+                    to right bottom,
+                rgba(255,255,255,0.4),
+                rgba(255,255,255, 0.1));
+                border-radius: 10px;
+                padding: 1em;
+                margin: 10px;
+                margin-left: 1rem;
+                border-top: 1px solid rgba(255,255,255,0.5);
+                border-left: 1px solid rgba(255,255,255,0.5);
+                backdrop-filter: blur(5px); 
+                padding: 40px;
+                position: relative;
+                width: 100%;
+                padding-top: 90px;
+        }
+        .testimonialBox .quote{
+            top: 20px;
+            right: 30px;
+        }
+.testi-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testi-img img{
+border-radius: 50%;
+height: 10rem;
+width: 10rem;
+}
+.swiper-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-left
+    {
+        background-image: none;
+    }
+/*for bigger screens only*/
+@media only screen and (min-width: 793px)
+    {}
+
+    /*for smaller screens only*/
+@media only screen and (min-width: 793px)
+{
+
+}
