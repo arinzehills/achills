@@ -159,7 +159,7 @@ section::after{
      height: 60vh;
 }
 .about-img svg{
-    width: 70vh;
+    width: 65vh;
      height: 60vh;
 }
 
@@ -267,7 +267,7 @@ section::after{
                 }
                 .about-img img{
                     height: 18rem;
-                    width: 90%;
+                    width: 80%;
                 }
                 .about-img svg{
                     height: 18rem;
