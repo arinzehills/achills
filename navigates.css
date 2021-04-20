@@ -76,6 +76,7 @@ header.sticky  .logo{
     .logo img{
       height:80px;
       width: 80px;
+      margin-left: 15px;
   }
   header div h1{
     color: white;
