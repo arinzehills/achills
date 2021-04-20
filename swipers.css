@@ -4,36 +4,48 @@
         justify-content: center;
         position: relative;
         color: cornflowerblue;
+        overflow: hidden;
+        
+}
+ .team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(230, 57, 57);
+    
+}
+.team h1{
+    margin-top: 10rem;
 }
 .swiper-container{
-    width: 100%;
+    width: 30%;
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
 }
 .swiper-slide{
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
-    
+    width: 320px;
+    background: white;
+    backdrop-filter: blur(4px);
 }
 .testimonialBox{
-    width: 15rem;
     background-color: white;
+    width: 100%;
     background: linear-gradient(
                     to right bottom,
                 rgba(255,255,255,0.4),
                 rgba(255,255,255, 0.1));
                 border-radius: 10px;
-                padding: 1em;
+                padding: 25px;
                 margin: 10px;
                 margin-left: 1rem;
                 border-top: 1px solid rgba(255,255,255,0.5);
                 border-left: 1px solid rgba(255,255,255,0.5);
                 backdrop-filter: blur(5px); 
-                padding: 40px;
                 position: relative;
-                width: 100%;
+               
                 padding-top: 90px;
         }
         .testimonialBox .quote{
@@ -54,6 +66,8 @@ width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
+    
 }
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-left
@@ -65,7 +79,11 @@ width: 10rem;
     {}
 
     /*for smaller screens only*/
-@media only screen and (min-width: 793px)
+@media only screen and (max-width: 793px)
 {
-
+    .swiper-container{
+        width: 95%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
