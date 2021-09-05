@@ -12,6 +12,15 @@
     align-items: center;
     justify-content: center;
 }
+@supports (-moz-appearance:none){
+    .jobsdone-div{
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+     .jobs-circle1,.jobs-circle3, .jobs-circle5{
+         display: none;
+     }
+}
 .jobsdone-div{
     width: 15rem;
     height: 17rem;
