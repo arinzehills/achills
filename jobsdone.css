@@ -1,157 +1,161 @@
 .jobsdone-title {
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: 3;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 3;
 }
-.jobsdone{
-    display: flex;
-    margin: 20px;
-    margin-left: 0;
-    align-items: center;
-    justify-content: center;
+.jobsdone {
+  display: flex;
+  margin: 20px;
+  margin-left: 0;
+  align-items: center;
+  justify-content: center;
 }
-@supports (-moz-appearance:none){
-    .jobsdone-div{
-        background: white;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-     }
-     .jobs-circle1,.jobs-circle3, .jobs-circle5{
-         display: none;
-     }
+@supports (-moz-appearance: none) {
+  .jobsdone-div {
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .jobs-circle1,
+  .jobs-circle3,
+  .jobs-circle5 {
+    display: none;
+  }
 }
-.jobsdone-div{
-    width: 15rem;
-    height: 17rem;
-    background-color: white;
-    background: linear-gradient(
-                    to right bottom,
-                rgba(255, 255, 255, 0.7),
-                rgba(255,255,255, 0.3));
-                border-radius: 10px;
-                padding: 1em;
-                margin: 10px;
-                margin-left: 1em;
-                border-top: 1px solid rgba(255,255,255,0.5);
-                border-left: 1px solid rgba(255, 255, 255, 0.781);
-                backdrop-filter: blur(55px);
-                z-index: 3;
-                align-content: center;
- }
- .jobsdone-div img{
+.jobsdone-div {
+  width: 15rem;
+  height: 17rem;
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 10px;
+  padding: 1em;
+  margin: 10px;
+  margin-left: 1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.781);
+  backdrop-filter: blur(55px);
+  z-index: 3;
+  align-content: center;
+}
+.jobsdone-div img {
+  width: 13rem;
+  height: 15rem;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+.jobs-circle1,
+.jobs-circle3,
+.jobs-circle5 {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    rgb(247, 111, 93),
+    rgba(255, 145, 0, 0.827)
+  );
+  border-radius: 50%;
+  z-index: 0;
+  left: 10rem;
+}
+.jobs-circle2,
+.jobs-circle4,
+.jobs-circle6 {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  background: linear-gradient(to top, #3a0667, #6500ff);
+  border-radius: 50%;
+  z-index: 0;
+}
+.jobs-circle1 {
+  left: 13rem;
+}
+.jobs-circle3 {
+  left: 30rem;
+}
+.jobs-circle5 {
+  left: 49rem;
+}
+.jobs-circle2 {
+  position: absolute;
+  left: 37rem;
+  top: 161rem;
+}
+.jobs-circle4 {
+  position: absolute;
+  left: 18rem;
+  top: 165em;
+}
+.jobs-circle6 {
+  position: absolute;
+  right: 23%;
+  top: 163em;
+}
+.jobsdone div img {
+  width: 10rem;
+  height: 10rem;
+}
+.jobs-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media only screen and (max-width: 792px) {
+  .jobsdone-div {
     width: 13rem;
     height: 15rem;
-   margin-left: 50px;
-   border-radius: 50%;
- }
- .jobs-circle1,.jobs-circle3, .jobs-circle5
- {
-    content: '';
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    background: linear-gradient(to top, rgb(247, 111, 93), rgba(255, 145, 0, 0.827));
+    margin-top: 30px;
+    margin-left: 4rem;
+  }
+  .jobsdone-div img {
+    width: 12rem;
+    height: 14rem;
+    margin-left: 30px;
     border-radius: 50%;
-    z-index: 0;
-    left: 10rem;
-
- }
- .jobs-circle2,.jobs-circle4, .jobs-circle6
- {
-    content: '';
-    width: 10rem;
-    height: 10rem;
+  }
+  .jobsdone {
+    display: block;
+  }
+  .jobs-circle1 {
+    left: 1rem;
+    top: 205rem;
+  }
+  .jobs-circle3 {
+    left: 1rem;
+    top: 225rem;
+  }
+  .jobs-circle5 {
+    left: 1rem;
+    top: 245rem;
+  }
+  .jobs-circle2 {
     position: absolute;
-    background: linear-gradient(to top, rgb(7, 176, 255), rgba(0, 60, 255, 0.827));
-    border-radius: 50%;
-    z-index: 0;
-    
- }
- .jobs-circle1{
+    left: 14rem;
+    top: 215rem;
+  }
+  .jobs-circle4 {
+    position: absolute;
     left: 13rem;
- }
- .jobs-circle3{
-    left: 30rem;
- }
- .jobs-circle5{
-    left: 49rem;
-}
-.jobs-circle2{
+    top: 235em;
+  }
+  .jobs-circle6 {
     position: absolute;
-    left: 41rem;
-    top: 141rem;
-}.jobs-circle4{
-    position: absolute;
-    left: 23rem;
-    top: 145em;
-}
- .jobs-circle6{
-     position: absolute;
-    right: 15%;
-    top: 140em;
- }
- .jobsdone div img{
-     width:10rem;
-     height: 10rem;
- }
- .jobs-name{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     overflow: hidden;
- }
-@media only screen and (max-width: 792px)
-{
-    .jobsdone-div{
-        width: 13rem;
-        height: 15rem;
-        margin-top: 30px;
-        margin-left: 4rem;
-     }
-     .jobsdone-div img{
-        width: 12rem;
-        height: 14rem;
-       margin-left: 30px;
-       border-radius: 50%;
-     }
-    .jobsdone{
-        display:block;
-        
-    }
-    .jobs-circle1{
-        left: 1rem;
-        top: 205rem;
-
-     }
-     .jobs-circle3{
-        left: 1rem;
-        top: 225rem;
-     }
-     .jobs-circle5{
-        left: 1rem;
-        top: 245rem;
-    }
-    .jobs-circle2{
-        position: absolute;
-        left: 14rem;
-        top: 215rem;
-    }.jobs-circle4{
-        position: absolute;
-        left: 13rem;
-        top: 235em;
-    }
-     .jobs-circle6{
-         position: absolute;
-         left: 12rem;
-        top: 255em;
-     }
-     .jobs-circle2,.jobs-circle4, .jobs-circle6
- {
- 
+    left: 12rem;
+    top: 255em;
+  }
+  .jobs-circle2,
+  .jobs-circle4,
+  .jobs-circle6 {
     width: 8rem;
     height: 9rem;
-    
-    
- }
+  }
 }
