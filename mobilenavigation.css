@@ -32,7 +32,11 @@
     position: absolute;
     top: 25px;
     left: 25px;
-    background: linear-gradient(to top, #ffcc33, #d4af37);
+    background: linear-gradient(
+      to top,
+      rgb(247, 111, 93),
+      rgba(255, 145, 0, 0.827)
+    );
     width: 30px;
     height: 5px;
     transition: 0.2s ease;
