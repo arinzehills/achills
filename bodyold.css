@@ -22,8 +22,8 @@
 section {
   position: relative;
   width: 100%;
-  height: 54rem;
-  background: radial-gradient(#3a0667, #6500ff);
+  height: 50rem;
+  background: linear-gradient(to top, #3a0667, #6500ff);
   justify-content: center;
   align-items: center;
 }
@@ -42,12 +42,20 @@ section::before {
   width: 100%;
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
-
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: #fff;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  clip-path: polygon(100% 0, 0 0%, 100% 100%);
+}
 .services {
   display: flex;
   position: relative;
   z-index: 0;
-  margin-top: 2em;
 }
 .services .div-glass {
   display: block;
@@ -72,10 +80,10 @@ section::before {
 .div-glass h3 {
   padding-top: 5px;
   margin-left: 30px;
-  color: WHITE;
+  color: rgb(255, 144, 129);
 }
-/* #web-serve {
-} */
+#web-serve {
+}
 .div-glass p {
   padding-top: 10px;
   color: white;
@@ -102,7 +110,7 @@ section::before {
   border-radius: 10px;
   padding: 1em;
   margin: 10px;
-  margin-left: 5em;
+  margin-left: 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
@@ -128,9 +136,8 @@ section::before {
 .circle {
   background-image: linear-gradient(
     to top,
-    /* rgb(7, 176, 255),
-    rgba(0, 60, 255, 0.827) */ rgb(247, 111, 93),
-    rgba(255, 145, 0, 0.827)
+    rgb(7, 176, 255),
+    rgba(0, 60, 255, 0.827)
   );
   left: -3em;
 }
@@ -157,7 +164,7 @@ section::before {
 
 #pabout {
   margin-left: 5%;
-  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   line-height: 3em;
   word-spacing: 10px;
   font-size: 20px;
