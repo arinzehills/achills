@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Ac Hills Tech| Home </title>
+
+        <script src="https://use.fontawesome.com/b78b12196f.js"></script>
+        <link href="aos.css" rel="stylesheet">
+        
+        <!--for general menn-->
+        <link href="navigates.css" rel="stylesheet" >
+        <!-- for hamburger menu-->
+        <link rel="stylesheet" type="text/css"   href="mobilenavigation.css"  />
+        <link href="wave.css" type="text/css" rel="stylesheet">
+        <link href="loader.css" type="text/css" rel="stylesheet">
+        <link href="footer.css" type="text/css" rel="stylesheet">
+        <link href="body.css" type="text/css" rel="stylesheet">
+        <link href="gallery.css" type="text/css" rel="stylesheet">
+<!-- online css-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
+        <link href="css/ swiper-bundle.min.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!--online js-->
+        <script src="js/swiper-bundle.min.js"></script>
+      
+    </head>
+    <body>
+        
+        <div class="loader_bg">
+            <div class="loader-div"></div>
+            
+            <img src="img/loaderimg.png">
+            <div class="loading-spinner">
+                <img style="border-radius: 50%; height: 13rem; width: 13rem; left: 1em; z-index: 1;" src="img/mylogo.png">
+            </div>
+
+            <div class="loading-dots">
+                <div class="bounce"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="loading-name" style="display: inline-flex;">
+                    <div class="name">Ac Hills</div>
+                    <div class="name1" style="margin-left: 6px;">Techno</div>
+                    <div class="name2" style="margin-left: -19px;">logies</div>
+                        <h3 style="color: #ff5733;
+                        position: absolute;top:50%;align-items: center;">Drivers of Ideas and Creativity...</h3>
+                        
+            </div>
+            
+        </div>
+
+      <h1> Done </h1>
+      
+         
+    </body>
+    <script src="js/jquery-1.12.4.min.js"></script> 
+        
+    <script src="aos.js"></script> 
+          <script>
+                  window.addEventListener("scroll", function(){
+                      var header=document.querySelector("header");
+                      header.classList.toggle("sticky", window.scrollY > 0);
+                  })
+                  AOS.init();
+                  </script>
+              <script>
+                  setTimeout(function(){
+                      $('.loader_bg').fadeToggle();
+                  }, 1500);
+          </script>
+    </html>
